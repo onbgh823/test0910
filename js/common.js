@@ -21,10 +21,16 @@
             $('#kimContainer').remove()
             $('#kimBox').load(url)
         })
-        $('.h1Nav > h1').on('click', function(e){
-            e.preventDefault()
+        //로고부분
+                // $('.h1Nav > h1').on('click', function(e){
+        //     e.preventDefault()
+        //     $('#kimContainer').remove()
+        //     $('#kimBox').load('main.html')
+        // })
+        $('.h1Nav > h1').on('click', function(){
+            var url = $(this).attr('href')
             $('#kimContainer').remove()
-            $('#kimBox').load('main.html')
+            $('#kimBox').load(url)
         })
 
 
